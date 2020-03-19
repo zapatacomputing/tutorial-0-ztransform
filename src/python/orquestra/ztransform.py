@@ -14,5 +14,5 @@ def ztransform(message):
 
     zessage_str = ' '.join(zessage)
 
-    with open("z_message.json",'w') as f:
+    with open("zessage.json",'w') as f:
       f.write(json.dumps(zessage_str, indent=2)) # Write message to file as this will serve as output artifact
