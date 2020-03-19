@@ -19,3 +19,7 @@ spec:
             ztransform(message)
       - name: message
         path: /app/message.json
+    outputs:
+      artifacts:
+      - name: welcome
+        path: /app/welcome.json
