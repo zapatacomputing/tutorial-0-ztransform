@@ -12,6 +12,7 @@ spec:
         path: /app/main.py
         raw:
           data: |
+            import json
             from orquestra import ztransform
             with open("/app/message.json", 'r') as f:
               message = json.load(f)
