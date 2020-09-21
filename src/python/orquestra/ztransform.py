@@ -23,5 +23,5 @@ def ztransform(artifact):
     zessage_dict["message"] = zessage_str
     zessage_dict["schema"] = "message"
 
-    with open("zessage.json",'w') as f:
+    with open("zelcome.json",'w') as f:
       f.write(json.dumps(zessage_dict, indent=2)) # Write message to file as this will serve as output artifact
