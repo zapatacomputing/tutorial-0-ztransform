@@ -1,15 +1,15 @@
-"""
-This module saves a welcome message.
-"""
-
 import json
 
-def ztransform(artifact):
+def z_transformation(artifact_file):
+    with open(artifact_file, 'r') as f:
+        artifact = json.load(f)
+
     if "message" not in artifact:
         raise KeyError("Error: Artifact had no 'message' field.")
 
-    message = artifact["message"]
+    z_transform(artifact["message"])
 
+def z_transform(message):
     zessage = []
 
     for word in message.split():
