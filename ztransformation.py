@@ -1,7 +1,7 @@
 import json
 
-def z_transformation(artifact_file):
-    with open(artifact_file, 'r') as f:
+def z_transformation(message):
+    with open(message, 'r') as f:
         artifact = json.load(f)
 
     if "message" not in artifact:
